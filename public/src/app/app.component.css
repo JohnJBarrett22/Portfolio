@@ -25,9 +25,10 @@
     border-bottom: 10px;
 }
 #intro {
-    display: inline-block;
     position: absolute;
-    top: -900;
-    left: -900;
-    z-index:300000;
+    bottom: 0;
+    margin: 0 auto;
+    color: #f1f1f1;
+    width: 76%;
+    padding: 20px;
 }
