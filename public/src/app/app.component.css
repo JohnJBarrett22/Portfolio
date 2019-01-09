@@ -40,7 +40,39 @@
     text-align: center;
     color: white;
 }
+#p1-right {
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+    padding: 2rem;
+    text-align: center;
+}
+#p2-left {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    height: 100%;
+    padding: 2rem;
+    text-align: center;
+    color: white;
+}
 #p2-right {
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+    padding: 2rem;
+    text-align: center;
+}
+#p3-left {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    height: 100%;
+    padding: 2rem;
+    text-align: center;
+    color: white;
+}
+#p3-right {
     display: inline-block;
     width: 50%;
     height: 100%;
