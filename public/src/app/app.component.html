@@ -25,103 +25,121 @@
       <links>
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link waves-light" mdbWavesEffect>Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link waves-light" mdbWavesEffect>Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link waves-light" mdbWavesEffect>Projects</a>
+            <a class="nav-link waves-light" href="#projects" mdbWavesEffect>Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link waves-light" mdbWavesEffect>Skills</a>
+            <a class="nav-link waves-light" href="#skills" mdbWavesEffect>Skills</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link waves-light" mdbWavesEffect>Contact</a>
+            <a class="nav-link waves-light" href="#contact" mdbWavesEffect>Contact</a>
           </li>
         </ul>
       </links>
     </mdb-navbar>
 
-    <div id="project1" class="row">
-      <div class="col"></div>
-      <div id="p1-left" class="col-5">
-        <h1>Yo! Grandma </h1>
-        <h3>1st place entry for Hackathon held at Coding Dojo(Burbank) sponsored by TensorIot on 12/8/18.</h3>
+    <!-- Projects -->
+    <section id="projects">
+      <div id="project1" class="row">
+        <div class="col"></div>
+        <div id="p1-left" class="col-5">
+          <h1>Yo! Grandma </h1>
+          <h3>1st place entry for Hackathon held at Coding Dojo(Burbank) sponsored by TensorIot on 12/8/18.</h3>
+        </div>
+        <div id="p1-right" class="col-5">
+          <mdb-carousel [animation]="'slide'">
+            <mdb-carousel-item>
+              <img class="d-block w-100" src="../assets/grandmaportal.png" alt="First slide">
+            </mdb-carousel-item>
+            <mdb-carousel-item>
+              <img class="d-block w-100" src="../assets/grandmaportal.png" alt="Second slide">
+            </mdb-carousel-item>
+            <mdb-carousel-item>
+              <img class="d-block w-100" src="../assets/grandmaportal.png" alt="Third slide">
+            </mdb-carousel-item>
+          </mdb-carousel>
+          <a href="https://github.com/JohnJBarrett22/Yo-Grandma"><i class="fa fa-github fa-3x"
+              aria-hidden="true"></i></a>
+          <i class="fa fa-youtube-play fa-3x" aria-hidden="true"></i>
+          <i class="fa fa-globe fa-3x" aria-hidden="true"></i>
+        </div>
+        <div class="col"></div>
       </div>
-      <div id="p1-right" class="col-5">
-        <mdb-carousel [animation]="'slide'">
-          <mdb-carousel-item>
-            <img class="d-block w-100" src="../assets/grandmaportal.png" alt="First slide">
-          </mdb-carousel-item>
-          <mdb-carousel-item>
-            <img class="d-block w-100" src="../assets/grandmaportal.png" alt="Second slide">
-          </mdb-carousel-item>
-          <mdb-carousel-item>
-            <img class="d-block w-100" src="../assets/grandmaportal.png" alt="Third slide">
-          </mdb-carousel-item>
-        </mdb-carousel>
-        <a href="https://github.com/JohnJBarrett22/Yo-Grandma"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a>
-        <i class="fa fa-youtube-play fa-3x" aria-hidden="true"></i>
-        <i class="fa fa-globe fa-3x" aria-hidden="true"></i>
-      </div>
-      <div class="col"></div>
-    </div>
 
-    <div id="project2" class="row">
-      <div class="col"></div>
-      <div id="p2-left" class="col-5">
-        <mdb-carousel [animation]="'slide'">
-          <mdb-carousel-item>
-            <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(130).jpg"
-              alt="First slide">
-          </mdb-carousel-item>
-          <mdb-carousel-item>
-            <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(129).jpg"
-              alt="Second slide">
-          </mdb-carousel-item>
-          <mdb-carousel-item>
-            <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(70).jpg" alt="Third slide">
-          </mdb-carousel-item>
-        </mdb-carousel>
-        <a href="https://github.com/JohnJBarrett22/Yo-Grandma"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a>
-        <i class="fa fa-youtube-play fa-3x" aria-hidden="true"></i>
-        <i class="fa fa-globe fa-3x" aria-hidden="true"></i>
+      <div id="project2" class="row">
+        <div class="col"></div>
+        <div id="p2-left" class="col-5">
+          <mdb-carousel [animation]="'slide'">
+            <mdb-carousel-item>
+              <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(130).jpg"
+                alt="First slide">
+            </mdb-carousel-item>
+            <mdb-carousel-item>
+              <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(129).jpg"
+                alt="Second slide">
+            </mdb-carousel-item>
+            <mdb-carousel-item>
+              <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(70).jpg"
+                alt="Third slide">
+            </mdb-carousel-item>
+          </mdb-carousel>
+          <a href="https://github.com/JohnJBarrett22/Yo-Grandma"><i class="fa fa-github fa-3x"
+              aria-hidden="true"></i></a>
+          <i class="fa fa-youtube-play fa-3x" aria-hidden="true"></i>
+          <i class="fa fa-globe fa-3x" aria-hidden="true"></i>
+        </div>
+        <div id="p2-right" class="col-5">
+          <h1>Yo! Grandma </h1>
+          <h3>1st place entry for Hackathon held at Coding Dojo(Burbank) sponsored by TensorIot on 12/8/18.</h3>
+        </div>
+        <div class="col"></div>
       </div>
-      <div id="p2-right" class="col-5">
-        <h1>Yo! Grandma </h1>
-        <h3>1st place entry for Hackathon held at Coding Dojo(Burbank) sponsored by TensorIot on 12/8/18.</h3>
-      </div>
-      <div class="col"></div>
-    </div>
 
-    <div id="project3" class="row">
-      <div class="col"></div>
-      <div id="p3-left" class="col-5">
-        <h1>Yo! Grandma </h1>
-        <h3>1st place entry for Hackathon held at Coding Dojo(Burbank) sponsored by TensorIot on 12/8/18.</h3>
+      <div id="project3" class="row">
+        <div class="col"></div>
+        <div id="p3-left" class="col-5">
+          <h1>Yo! Grandma </h1>
+          <h3>1st place entry for Hackathon held at Coding Dojo(Burbank) sponsored by TensorIot on 12/8/18.</h3>
+        </div>
+        <div id="p3-right" class="col-5">
+          <mdb-carousel [animation]="'slide'">
+            <mdb-carousel-item>
+              <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(130).jpg"
+                alt="First slide">
+            </mdb-carousel-item>
+            <mdb-carousel-item>
+              <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(129).jpg"
+                alt="Second slide">
+            </mdb-carousel-item>
+            <mdb-carousel-item>
+              <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(70).jpg"
+                alt="Third slide">
+            </mdb-carousel-item>
+          </mdb-carousel>
+          <a href="https://github.com/JohnJBarrett22/Yo-Grandma"><i class="fa fa-github fa-3x"
+              aria-hidden="true"></i></a>
+          <i class="fa fa-youtube-play fa-3x" aria-hidden="true"></i>
+          <i class="fa fa-globe fa-3x" aria-hidden="true"></i>
+        </div>
+        <div class="col"></div>
       </div>
-      <div id="p3-right" class="col-5">
-        <mdb-carousel [animation]="'slide'">
-          <mdb-carousel-item>
-            <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(130).jpg"
-              alt="First slide">
-          </mdb-carousel-item>
-          <mdb-carousel-item>
-            <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(129).jpg"
-              alt="Second slide">
-          </mdb-carousel-item>
-          <mdb-carousel-item>
-            <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(70).jpg" alt="Third slide">
-          </mdb-carousel-item>
-        </mdb-carousel>
-        <a href="https://github.com/JohnJBarrett22/Yo-Grandma"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a>
-        <i class="fa fa-youtube-play fa-3x" aria-hidden="true"></i>
-        <i class="fa fa-globe fa-3x" aria-hidden="true"></i>
+    </section>
+
+    <!-- Skills -->
+    <section id="#skills">
+      <div id="skills">
+
       </div>
-      <div class="col"></div>
-    </div>
+    </section>
 
-    <div id="skills">
+    <!-- Contact -->
+    <section id="#contact">
+      <div id="contact">
 
-    </div>
+      </div>
+    </section>
 
 
   </div>
