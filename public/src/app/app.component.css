@@ -32,8 +32,12 @@ i {
 #intro {
     position: absolute;
     bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
     margin: 0 auto;
     width: 60%;
+    z-index: 10000;
 }
 #p1-left {
     display: inline-block;
