@@ -6,17 +6,17 @@ i {
     color: white;
     margin: 1rem;
 }
-#project1, #skills {
+#project1 {
     height: 550px;
     width: 100%;
     background-color: #4C4F57;
 }
-#project2, #contact {
+#project2, #skills {
     height: 500px;
     width: 100%;
     background-color: white;
 }
-#project3 {
+#project3, #contact {
     height: 500px;
     width: 100%;
     background-color: black;
