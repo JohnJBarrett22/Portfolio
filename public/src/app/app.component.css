@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;   
 }
+a {
+    color: orange;
+}
 i {
     color: white;
     margin: 1rem;
@@ -38,52 +41,4 @@ i {
     margin: 0 auto;
     width: 60%;
     z-index: 10000;
-}
-#p1-left {
-    display: inline-block;
-    vertical-align: top;
-    width: 50%;
-    height: 100%;
-    padding: 2rem;
-    text-align: center;
-    color: white;
-}
-#p1-right {
-    display: inline-block;
-    width: 50%;
-    height: 100%;
-    padding: 2rem;
-    text-align: center;
-}
-#p2-left {
-    display: inline-block;
-    vertical-align: top;
-    width: 50%;
-    height: 100%;
-    padding: 2rem;
-    text-align: center;
-    color: white;
-}
-#p2-right {
-    display: inline-block;
-    width: 50%;
-    height: 100%;
-    padding: 2rem;
-    text-align: center;
-}
-#p3-left {
-    display: inline-block;
-    vertical-align: top;
-    width: 50%;
-    height: 100%;
-    padding: 2rem;
-    text-align: center;
-    color: white;
-}
-#p3-right {
-    display: inline-block;
-    width: 50%;
-    height: 100%;
-    padding: 2rem;
-    text-align: center;
 }
