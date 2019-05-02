@@ -5,21 +5,25 @@
 a {
     color: orange;
 }
+a:hover {
+    color: red;
+    font-weight: bold;
+}
 i {
     color: white;
     margin: 1rem;
 }
-#project1 {
-    height: 550px;
+#projects {
+    height: 100%;
     width: 100%;
     background-color: #4C4F57;
 }
-#project2, #skills {
+#skills {
     height: 500px;
     width: 100%;
     background-color: white;
 }
-#project3, #contact {
+#contact {
     height: 500px;
     width: 100%;
     background-color: black;
@@ -41,4 +45,10 @@ i {
     margin: 0 auto;
     width: 60%;
     z-index: 10000;
+}
+.sample {
+    margin: 1rem;
+}
+.test {
+    border: 1px solid blue;
 }
