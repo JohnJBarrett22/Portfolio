@@ -16,19 +16,23 @@ import { DOCUMENT } from '@angular/common';
 )]
 })
 export class AppComponent implements OnInit{
-
+  
   constructor(@Inject(DOCUMENT) document) { }
 
+  
   ngOnInit() {  }
 
   @HostListener('window:scroll', ['$event'])
   onWindowScroll(e) {
-     if (window.pageYOffset > 550) {
-       let element = document.getElementById('navbar');
-       element.classList.add('sticky');
-     } else {
-      let element = document.getElementById('navbar');
+    let navBar = document.getElementById('myNav');
+    let topOfNavBar = navBar.offsetTop; 
+      if (window.pageYOffset > topOfNavBar) {
+        console.log(window.pageYOffset)
+        let element = document.getElementById('myNav');
+        element.classList.add('sticky');
+      } else {
+        let element = document.getElementById('myNav');
         element.classList.remove('sticky'); 
-     }
+      }
   }
 }
