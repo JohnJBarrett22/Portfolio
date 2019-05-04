@@ -25,7 +25,6 @@ i {
 }
 #contact {
     height: 500px;
-    width: 100%;
     background-color: black;
 }
 #myVideo {
@@ -51,4 +50,18 @@ i {
 }
 .test {
     border: 1px solid blue;
+}
+.sticky {
+    background: #fff;
+    box-shadow: 0 3px 12px 0 rgba(0,0,0,.08);
+    position: fixed;
+    top: 0;
+    z-index: 90000;
+    width: 100%;
+}
+hr {
+    background-color: white;
+}
+.contactLinks {
+    text-align: center;
 }

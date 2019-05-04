@@ -21,12 +21,16 @@
       </div>
     </section>
 
-    <mdb-navbar id="myNav" SideClass="navbar navbar-expand-lg white">
+    <mdb-navbar id="myNav" SideClass="navbar navbar-expand-lg white" class="sticky">
       <mdb-navbar-brand>
         <a class="navbar-brand" href="#">
           <img src="../assets/SmallLogo.png" height="30" alt="">
         </a>
       </mdb-navbar-brand>
+
+      <section class="web_homePage" (scroll)="onWindowScroll($event);">  
+        <!-- rest of the html code goes here -->
+     </section>
 
       <links>
         <ul class="navbar-nav ml-auto">
@@ -260,8 +264,20 @@
 
     <!-- Contact -->
     <section id="contact">
-      <div id="contact">
-        <h1>Contact Me</h1>
+      <h1>Contact Me</h1>
+      <div id="contact" class="row justify-content-md-center">
+        <div class="col col-lg-1"></div>
+        <div class="col col-lg-10 contactLinks">
+          <hr>
+            <a href="#" class="mx-4"><mdb-icon fab icon="wordpress-simple" size="2x"></mdb-icon></a>
+            <a href="#" class="mx-4"><mdb-icon fab icon="linkedin-in" size="2x"></mdb-icon></a>
+            <a href="#" class="mx-4"><mdb-icon fab icon="github" size="2x"></mdb-icon></a>
+            <a href="#" class="mx-4"><mdb-icon fab icon="instagram" size="2x"></mdb-icon></a>
+            <a href="#" class="mx-4"><mdb-icon fab icon="twitter" size="2x"></mdb-icon></a>
+            <a href="#" class="mx-4"><mdb-icon fab icon="goodreads-g" size="2x"></mdb-icon></a>
+          <hr>
+        </div>
+        <div class="col col-lg-1"></div>
       </div>
     </section>
   </div>
