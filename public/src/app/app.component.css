@@ -13,6 +13,10 @@ i {
     color: white;
     margin: 1rem;
 }
+hr {
+    margin: 1rem;
+    background-color: white;
+}
 #projects {
     height: 100%;
     width: 100%;
@@ -24,7 +28,6 @@ i {
     background-color: white;
 }
 #contact {
-    height: 500px;
     background-color: black;
 }
 #myVideo {
@@ -48,9 +51,6 @@ i {
 .sample {
     margin: 1rem;
 }
-.test {
-    border: 1px solid blue;
-}
 .sticky {
     background: #fff;
     box-shadow: 0 3px 12px 0 rgba(0,0,0,.08);
@@ -59,9 +59,9 @@ i {
     z-index: 90000;
     width: 100%;
 }
-hr {
-    background-color: white;
-}
 .contactLinks {
     text-align: center;
+}
+.test {
+    border: 1px solid blue;
 }
