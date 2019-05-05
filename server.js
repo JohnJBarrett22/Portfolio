@@ -1,7 +1,10 @@
 //Imports
-var express = require("express");
-var app = express();
-var bodyParser = require("body-parser");
+const express = require("express");
+const bodyParser = require("body-parser");
+const exphbs = require("express-handlebars")
+const nodemailer = require("nodemailer")
+
+const app = express();
 var mongoose = require("mongoose");
 var server = app.listen(1337);
 var io = require("socket.io")(server);

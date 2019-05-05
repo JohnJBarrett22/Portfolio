@@ -1,25 +1,14 @@
-import { Component, OnInit, HostListener, Inject } from '@angular/core';
-import { trigger, state, transition, style, animate } from '@angular/animations';  
-import { DOCUMENT } from '@angular/common';
+import { Component, OnInit, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
-  animations:[ 
-    trigger('fade',
-    [ 
-      state('void', style({ opacity : 0})),
-      transition(':enter',[ animate(300)]),
-      transition(':leave',[ animate(500)]),
-    ]
-)]
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit{
   
-  constructor(@Inject(DOCUMENT) document) { }
+  constructor() { }
 
-  
   ngOnInit() {  }
 
   @HostListener('window:scroll', ['$event'])
@@ -27,7 +16,8 @@ export class AppComponent implements OnInit{
     let navBar = document.getElementById('myNav');
     let topOfNavBar = navBar.offsetTop; 
       if (window.pageYOffset > topOfNavBar) {
-        console.log(window.pageYOffset)
+        console.log("Offset:", window.pageYOffset)
+        console.log("ScrollY:", window.scrollY)
         let element = document.getElementById('myNav');
         element.classList.add('sticky');
       } else {
