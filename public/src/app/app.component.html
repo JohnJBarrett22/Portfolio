@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <div id="container">
+  <div id="container" (scroll)="onWindowScroll($event);">
 
     <section id="home">
       <div id="home">
@@ -27,10 +27,6 @@
           <img src="../assets/SmallLogo.png" height="30" alt="">
         </a>
       </mdb-navbar-brand>
-
-      <section class="web_homePage" (scroll)="onWindowScroll($event);">  
-        <!-- rest of the html code goes here -->
-     </section>
 
       <links>
         <ul class="navbar-nav ml-auto">
@@ -58,7 +54,10 @@
       <div id="about">
         <h1>About</h1>
         <div class="row">
-
+            <div class="col col-lg-1"></div>
+            <div class="col col-lg-5"></div>
+            <div class="col col-lg-5"></div>
+            <div class="col col-lg-1"></div>            
         </div>
       </div>
     </section>
@@ -81,16 +80,16 @@
                 <div class="mask"></div>
               </a>
             </div>
-            <mdb-card-body>
+            <mdb-card-body class="cardPadding">
               <mdb-card-title>
-                <h4>Michael's Mini-Mart</h4>
+                <h4 class="cardTitle">Michael's Mini-Mart</h4>
               </mdb-card-title>
               <mdb-card-text> Some quick example text to build on the card title and make up the bulk of the card's
                 content.
               </mdb-card-text>
-              <a href="www.michaelsminimart.com"><mdb-icon fas icon="globe-americas"></mdb-icon></a>
-              <a href="https://github.com/JohnJBarrett22/Michaels_Mini_Mart" mdbWavesEffect><mdb-icon fab icon="youtube"></mdb-icon></a>
-              <a href="https://github.com/JohnJBarrett22/Michaels_Mini_Mart" mdbWavesEffect><mdb-icon fab icon="github"></mdb-icon></a>
+              <a href="www.michaelsminimart.com" class="cardIcon" mdbWavesEffect><mdb-icon fas icon="globe-americas" size="lg"></mdb-icon></a>
+              <a href="https://github.com/JohnJBarrett22/Michaels_Mini_Mart" class="cardIcon" mdbWavesEffect><mdb-icon fab icon="youtube" size="lg"></mdb-icon></a>
+              <a href="https://github.com/JohnJBarrett22/Michaels_Mini_Mart" class="cardIcon" mdbWavesEffect><mdb-icon fab icon="github" size="lg"></mdb-icon></a>
             </mdb-card-body>
           </mdb-card>
 
@@ -103,15 +102,15 @@
                 <div class="mask"></div>
               </a>
             </div>
-            <mdb-card-body>
+            <mdb-card-body class="cardPadding">
               <mdb-card-title>
                 <h4>Animal Advocate</h4>
               </mdb-card-title>
               <mdb-card-text> Some quick example text to build on the card title and make up the bulk of the card's
                 content.
               </mdb-card-text>
-              <a href="https://github.com/JohnJBarrett22/Michaels_Mini_Mart" mdbWavesEffect><mdb-icon fab icon="youtube"></mdb-icon></a>
-              <a href="https://github.com/JohnJBarrett22/Animal_Advocate" mdbWavesEffect><mdb-icon fab icon="github"></mdb-icon></a>
+              <a href="https://github.com/JohnJBarrett22/Michaels_Mini_Mart" class="cardIcon" mdbWavesEffect><mdb-icon fab icon="youtube" size="lg"></mdb-icon></a>
+              <a href="https://github.com/JohnJBarrett22/Animal_Advocate" class="cardIcon" mdbWavesEffect><mdb-icon fab icon="github" size="lg"></mdb-icon></a>
             </mdb-card-body>
           </mdb-card>
 
@@ -124,15 +123,15 @@
                 <div class="mask"></div>
               </a>
             </div>
-            <mdb-card-body>
+            <mdb-card-body class="cardPadding">
               <mdb-card-title>
                 <h4>Calculator</h4>
               </mdb-card-title>
               <mdb-card-text> Some quick example text to build on the card title and make up the bulk of the card's
                 content.
               </mdb-card-text>
-              <a href="https://github.com/JohnJBarrett22/Michaels_Mini_Mart" mdbWavesEffect><mdb-icon fab icon="youtube"></mdb-icon></a>
-              <a href="https://github.com/JohnJBarrett22/Calculator" mdbWavesEffect><mdb-icon fab icon="github"></mdb-icon></a>
+              <a href="https://github.com/JohnJBarrett22/Michaels_Mini_Mart" class="cardIcon" mdbWavesEffect><mdb-icon fab icon="youtube" size="lg"></mdb-icon></a>
+              <a href="https://github.com/JohnJBarrett22/Calculator" class="cardIcon" mdbWavesEffect><mdb-icon fab icon="github" size="lg"></mdb-icon></a>
             </mdb-card-body>
           </mdb-card>
 
@@ -145,15 +144,15 @@
                 <div class="mask"></div>
               </a>
             </div>
-            <mdb-card-body>
+            <mdb-card-body class="cardPadding">
               <mdb-card-title>
                 <h4>Pong Game</h4>
               </mdb-card-title>
               <mdb-card-text> Some quick example text to build on the card title and make up the bulk of the card's
                 content.
               </mdb-card-text>
-              <a href="https://github.com/JohnJBarrett22/Michaels_Mini_Mart" mdbWavesEffect><mdb-icon fab icon="youtube"></mdb-icon></a>
-              <a href="https://github.com/JohnJBarrett22/Michaels_Mini_Mart" mdbWavesEffect><mdb-icon fab icon="github"></mdb-icon></a>
+              <a href="https://github.com/JohnJBarrett22/Michaels_Mini_Mart" class="cardIcon" mdbWavesEffect><mdb-icon fab icon="youtube" size="lg"></mdb-icon></a>
+              <a href="https://github.com/JohnJBarrett22/Michaels_Mini_Mart" class="cardIcon" mdbWavesEffect><mdb-icon fab icon="github" size="lg"></mdb-icon></a>
             </mdb-card-body>
           </mdb-card>
 
@@ -174,15 +173,15 @@
                 <div class="mask"></div>
               </a>
             </div>
-            <mdb-card-body>
+            <mdb-card-body class="cardPadding">
               <mdb-card-title>
                 <h4>YoGramma!</h4>
               </mdb-card-title>
               <mdb-card-text> Some quick example text to build on the card title and make up the bulk of the card's
                 content.
               </mdb-card-text>
-              <a href="https://github.com/JohnJBarrett22/Michaels_Mini_Mart" mdbWavesEffect><mdb-icon fab icon="youtube"></mdb-icon></a>
-              <a href="https://github.com/JohnJBarrett22/Yo-Grandma" mdbWavesEffect><mdb-icon fab icon="github"></mdb-icon></a>
+              <a href="https://github.com/JohnJBarrett22/Michaels_Mini_Mart" class="cardIcon" mdbWavesEffect><mdb-icon fab icon="youtube" size="lg"></mdb-icon></a>
+              <a href="https://github.com/JohnJBarrett22/Yo-Grandma" class="cardIcon" mdbWavesEffect><mdb-icon fab icon="github" size="lg"></mdb-icon></a>
             </mdb-card-body>
           </mdb-card>
 
@@ -195,15 +194,15 @@
                   <div class="mask"></div>
                 </a>
               </div>
-              <mdb-card-body>
+              <mdb-card-body class="cardPadding">
                 <mdb-card-title>
                   <h4>MEAN Project</h4>
                 </mdb-card-title>
                 <mdb-card-text> Some quick example text to build on the card title and make up the bulk of the card's
                   content.
                 </mdb-card-text>
-                <a href="https://github.com/JohnJBarrett22/Michaels_Mini_Mart" mdbWavesEffect><mdb-icon fab icon="youtube"></mdb-icon></a>
-                <a href="" mdbWavesEffect><mdb-icon fab icon="github"></mdb-icon></a>
+                <a href="https://github.com/JohnJBarrett22/Michaels_Mini_Mart" class="cardIcon" mdbWavesEffect><mdb-icon fab icon="youtube" size="lg"></mdb-icon></a>
+                <a href="" class="cardIcon" mdbWavesEffect><mdb-icon fab icon="github" size="lg"></mdb-icon></a>
               </mdb-card-body>
             </mdb-card>
 
@@ -216,15 +215,15 @@
                   <div class="mask"></div>
                 </a>
               </div>
-              <mdb-card-body>
+              <mdb-card-body class="cardPadding">
                 <mdb-card-title>
                   <h4>Java Project</h4>
                 </mdb-card-title>
                 <mdb-card-text> Some quick example text to build on the card title and make up the bulk of the card's
                   content.
                 </mdb-card-text>
-                <a href="https://github.com/JohnJBarrett22/Michaels_Mini_Mart" mdbWavesEffect><mdb-icon fab icon="youtube"></mdb-icon></a>
-                <a href="" mdbWavesEffect><mdb-icon fab icon="github"></mdb-icon></a>
+                <a href="https://github.com/JohnJBarrett22/Michaels_Mini_Mart" class="cardIcon" mdbWavesEffect><mdb-icon fab icon="youtube" size="lg"></mdb-icon></a>
+                <a href="" class="cardIcon" mdbWavesEffect><mdb-icon fab icon="github" size="lg"></mdb-icon></a>
               </mdb-card-body>
             </mdb-card>
 
@@ -237,15 +236,15 @@
                   <div class="mask"></div>
                 </a>
               </div>
-              <mdb-card-body>
+              <mdb-card-body class="cardPadding">
                 <mdb-card-title>
                   <h4>Travel Guide</h4>
                 </mdb-card-title>
                 <mdb-card-text> Some quick example text to build on the card title and make up the bulk of the card's
                   content.
                 </mdb-card-text>
-                <a href="https://github.com/JohnJBarrett22/Michaels_Mini_Mart" mdbWavesEffect><mdb-icon fab icon="youtube"></mdb-icon></a>
-                <a href="" mdbWavesEffect><mdb-icon fab icon="github"></mdb-icon></a>
+                <a href="https://github.com/JohnJBarrett22/Michaels_Mini_Mart" class="cardIcon" mdbWavesEffect><mdb-icon fab icon="youtube" size="lg"></mdb-icon></a>
+                <a href="" class="cardIcon" mdbWavesEffect><mdb-icon fab icon="github" size="lg"></mdb-icon></a>
               </mdb-card-body>
             </mdb-card>
 
