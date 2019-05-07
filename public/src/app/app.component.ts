@@ -6,10 +6,12 @@ import { Component, OnInit, HostListener } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit{
-  
+
   constructor() { }
 
-  ngOnInit() {  }
+  ngOnInit() {
+    
+  }
 
   @HostListener('window:scroll', ['$event'])
   onWindowScroll(e) {
@@ -25,4 +27,6 @@ export class AppComponent implements OnInit{
         element.classList.remove('sticky'); 
       }
   }
+
+
 }
