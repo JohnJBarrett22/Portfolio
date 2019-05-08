@@ -71,8 +71,15 @@ hr {
 .cardPadding {
     padding: 0.25rem
 }
-.cardIcon {
+.cardIconBrowser {
+    color: blue;
+    padding-right: .25rem;  
+}
+.cardIconYouTube {
+    color:red;
+    padding-right: .25rem;  
+}
+.cardIconGitHub {
     color: black;
-    padding-right: .25rem;
-    
+    padding-right: .25rem;   
 }
