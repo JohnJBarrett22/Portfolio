@@ -83,3 +83,6 @@ hr {
     color: black;
     padding-right: .25rem;   
 }
+label {
+    color: white;
+}

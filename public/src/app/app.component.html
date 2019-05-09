@@ -274,9 +274,9 @@
                   <!-- {{newUser | json }} -->
                   <div class="form-row">
                     <div class="col-md-12 mb-3">
-                      <label for="validationServer01">First Name</label>
+                      <label>First Name</label>
                       <input type="text" class="form-control" id="validationServer01" name="newUser.firstName" required minlength="3">
-                      <span class="warning" *ngIf="newUser.firstName.length < 3">First name must be a minimum of 3 characters.</span>
+                      <!-- <span class="warning" *ngIf="newUser.firstName.length < 3">First name must be a minimum of 3 characters.</span> -->
                       <div class="valid-feedback">
                         Please provide a valid first name.
                       </div>
@@ -286,9 +286,9 @@
                   <!-- Row #2 -->
                   <div class="form-row">
                     <div class="col-md-12 mb-3">
-                      <label for="validationServer01">Last Name</label>
+                      <label>Last Name</label>
                       <input type="text" class="form-control" id="validationServer02" name="newUser.lastName" required minlength="3">
-                      <span class="warning" *ngIf="newUser.lastName.length < 3">Last name must be a minimum of 3 characters.</span>
+                      <!-- <span class="warning" *ngIf="newUser.lastName.length < 3">Last name must be a minimum of 3 characters.</span> -->
                       <div class="valid-feedback">
                         Please provide a valid last name.
                       </div>
@@ -298,9 +298,9 @@
                   <!-- Row #3 -->
                   <div class="form-row">
                     <div class="col-md-12 mb-3">
-                      <label for="validationServer01">Email</label>
+                      <label>Email</label>
                       <input type="text" class="form-control" id="validationServer03" name="newUser.email"  required minlength="9">
-                      <span class="warning" *ngIf="newUser.email.length < 9">Email must be a minimum of 9 characters.</span>
+                      <!-- <span class="warning" *ngIf="newUser.email.length < 9">Email must be a minimum of 9 characters.</span> -->
                       <div class="valid-feedback">
                         Please provide a valid email.
                       </div>
@@ -310,13 +310,21 @@
                   <!-- Row #4 -->
                   <div class="form-row">
                     <div class="col-md-12 mb-3">
-                      <label for="validationServer01">Oragnization</label>
+                      <label>Oragnization</label>
                       <input type="text" class="form-control" id="validationServer04" name="newUser.organization">
                     </div>
                   </div>
 
+                  <!-- Row #5 -->
+                  <div class="form-row">
+                    <div class="col-md-12 mb-3">
+                      <label>Message</label>
+                      <input type="text" class="form-control" id="validationServer05" name="newUser.message">
+                    </div>
+                  </div>
 
-                  <button class="myButton" type="submit"><i class="fas fa-user-plus"></i> Register</button>
+
+                  <button class="myButton" type="submit">Send Message<i class="fas fa-user-plus"></i></button>
                 </form>
                 <p class="error" *ngFor="let e of errors">{{e}}</p>
 
