@@ -269,6 +269,56 @@
           <div class="col col-lg-1"></div>
           <div class="col col-lg-10">
               
+              <form (submit)="addUser()">
+                  <!-- Row #1 -->
+                  <!-- {{newUser | json }} -->
+                  <div class="form-row">
+                    <div class="col-md-12 mb-3">
+                      <label for="validationServer01">First Name</label>
+                      <input type="text" class="form-control" id="validationServer01" name="newUser.firstName" required minlength="3">
+                      <span class="warning" *ngIf="newUser.firstName.length < 3">First name must be a minimum of 3 characters.</span>
+                      <div class="valid-feedback">
+                        Please provide a valid first name.
+                      </div>
+                    </div>
+                  </div>
+        
+                  <!-- Row #2 -->
+                  <div class="form-row">
+                    <div class="col-md-12 mb-3">
+                      <label for="validationServer01">Last Name</label>
+                      <input type="text" class="form-control" id="validationServer02" name="newUser.lastName" required minlength="3">
+                      <span class="warning" *ngIf="newUser.lastName.length < 3">Last name must be a minimum of 3 characters.</span>
+                      <div class="valid-feedback">
+                        Please provide a valid last name.
+                      </div>
+                    </div>
+                  </div>
+        
+                  <!-- Row #3 -->
+                  <div class="form-row">
+                    <div class="col-md-12 mb-3">
+                      <label for="validationServer01">Email</label>
+                      <input type="text" class="form-control" id="validationServer03" name="newUser.email"  required minlength="9">
+                      <span class="warning" *ngIf="newUser.email.length < 9">Email must be a minimum of 9 characters.</span>
+                      <div class="valid-feedback">
+                        Please provide a valid email.
+                      </div>
+                    </div>
+                  </div>
+        
+                  <!-- Row #4 -->
+                  <div class="form-row">
+                    <div class="col-md-12 mb-3">
+                      <label for="validationServer01">Oragnization</label>
+                      <input type="text" class="form-control" id="validationServer04" name="newUser.organization">
+                    </div>
+                  </div>
+
+
+                  <button class="myButton" type="submit"><i class="fas fa-user-plus"></i> Register</button>
+                </form>
+                <p class="error" *ngFor="let e of errors">{{e}}</p>
 
           </div>
           <div class="col col-lg-1"></div>
