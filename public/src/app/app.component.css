@@ -86,3 +86,16 @@ hr {
 label {
     color: white;
 }
+.submitButton {
+    margin: .25rem;
+    border: none;
+    border-radius: .25rem;
+    padding: 0 .5rem;
+    color: #f5941c;
+    background-color: #4C4F57;
+}
+input:focus {
+    border: 1px solid #f5941c;
+    outline: #f5941c;
+    box-shadow: 0 0 10px #f5941c;
+}

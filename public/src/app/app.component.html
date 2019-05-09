@@ -10,7 +10,6 @@
 <!-- Start of Async Drift Code -->
 <script>
     "use strict";
-    
     !function() {
       var t = window.driftt = window.drift = window.driftt || [];
       if (!t.init) {
@@ -303,7 +302,7 @@
               <div class="form-row">
                 <div class="col-md-12 mb-3">
                   <label>First Name</label>
-                  <input type="text" class="form-control" id="validationServer01" name="newUser.firstName" required minlength="3">
+                  <input type="text" class="form-control" id="formFirstName" name="newUser.firstName" required minlength="3">
                   <!-- <span class="warning" *ngIf="newUser.firstName.length < 3">First name must be a minimum of 3 characters.</span> -->
                   <div class="valid-feedback">
                     Please provide a valid first name.
@@ -315,7 +314,7 @@
               <div class="form-row">
                 <div class="col-md-12 mb-3">
                   <label>Last Name</label>
-                  <input type="text" class="form-control" id="validationServer02" name="newUser.lastName" required minlength="3">
+                  <input type="text" class="form-control" id="formLastName" name="newUser.lastName" required minlength="3">
                   <!-- <span class="warning" *ngIf="newUser.lastName.length < 3">Last name must be a minimum of 3 characters.</span> -->
                   <div class="valid-feedback">
                     Please provide a valid last name.
@@ -327,7 +326,7 @@
               <div class="form-row">
                 <div class="col-md-12 mb-3">
                   <label>Email</label>
-                  <input type="text" class="form-control" id="validationServer03" name="newUser.email" required minlength="9">
+                  <input type="text" class="form-control" id="formEmail" name="newUser.email" required minlength="9">
                   <!-- <span class="warning" *ngIf="newUser.email.length < 9">Email must be a minimum of 9 characters.</span> -->
                   <div class="valid-feedback">
                     Please provide a valid email.
@@ -338,8 +337,8 @@
               <!-- Row #4 -->
               <div class="form-row">
                 <div class="col-md-12 mb-3">
-                  <label>Oragnization</label>
-                  <input type="text" class="form-control" id="validationServer04" name="newUser.organization">
+                  <label>Organization</label>
+                  <input type="text" class="form-control" id="formOragnization" name="newUser.organization">
                 </div>
               </div>
 
@@ -347,11 +346,12 @@
               <div class="form-row">
                 <div class="col-md-12 mb-3">
                   <label>Message</label>
-                  <input type="text" class="form-control" id="validationServer05" name="newUser.message">
+                  <input type="text" class="form-control" id="formMessage" name="newUser.message">
                 </div>
               </div>
 
-              <button class="myButton" type="submit">Send Message<i class="fas fa-user-plus"></i></button>
+              <button class="submitButton" type="submit">Send Message<i class="fas fa-paper-plane"></i></button>
+              
             </form>
             <p class="error" *ngFor="let e of errors">{{e}}</p>
 
