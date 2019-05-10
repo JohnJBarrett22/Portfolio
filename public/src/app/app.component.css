@@ -35,7 +35,8 @@ hr {
 }
 #myVideo {
     display: inline-block;
-    height: 90%;
+    min-width: 100vw;
+    max-width: 100vh;
     z-index: 0;
 }
 #myNav {
@@ -107,4 +108,12 @@ input {
 }
 .rightField {
     padding-left: .5rem;
+}
+.finePrint {
+    font-size: 10px;
+    text-align: center;
+    color: white;
+}
+.bold {
+    font-weight: bold;
 }
