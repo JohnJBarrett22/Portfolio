@@ -299,8 +299,8 @@
             <form (submit)="addUser()">
               <!-- Row #1 -->
               <!-- {{newUser | json }} -->
-              <div class="form-row">
-                <div class="col-md-12 mb-3">
+              <div class="row">
+                <div class="col col-lg-6 leftField">
                   <label>First Name</label>
                   <input type="text" class="form-control" id="formFirstName" name="newUser.firstName" required minlength="3">
                   <!-- <span class="warning" *ngIf="newUser.firstName.length < 3">First name must be a minimum of 3 characters.</span> -->
@@ -308,11 +308,8 @@
                     Please provide a valid first name.
                   </div>
                 </div>
-              </div>
-    
-              <!-- Row #2 -->
-              <div class="form-row">
-                <div class="col-md-12 mb-3">
+              
+                <div class="col col-lg-6 rightField">
                   <label>Last Name</label>
                   <input type="text" class="form-control" id="formLastName" name="newUser.lastName" required minlength="3">
                   <!-- <span class="warning" *ngIf="newUser.lastName.length < 3">Last name must be a minimum of 3 characters.</span> -->
@@ -322,9 +319,9 @@
                 </div>
               </div>
     
-              <!-- Row #3 -->
-              <div class="form-row">
-                <div class="col-md-12 mb-3">
+              <!-- Row #2 -->
+              <div class="row">
+                <div class="col col-lg-6 leftField">
                   <label>Email</label>
                   <input type="text" class="form-control" id="formEmail" name="newUser.email" required minlength="9">
                   <!-- <span class="warning" *ngIf="newUser.email.length < 9">Email must be a minimum of 9 characters.</span> -->
@@ -332,21 +329,18 @@
                     Please provide a valid email.
                   </div>
                 </div>
-              </div>
-    
-              <!-- Row #4 -->
-              <div class="form-row">
-                <div class="col-md-12 mb-3">
+
+                <div class="col col-lg-6 rightField">
                   <label>Organization</label>
                   <input type="text" class="form-control" id="formOragnization" name="newUser.organization">
                 </div>
               </div>
 
-              <!-- Row #5 -->
-              <div class="form-row">
-                <div class="col-md-12 mb-3">
+              <!-- Row #3 -->
+              <div class="row">
+                <div class="col col-lg-12">
                   <label>Message</label>
-                  <input type="text" class="form-control" id="formMessage" name="newUser.message">
+                  <textarea rows="4" class="form-control" id="formMessage" name="newUser.message"></textarea>
                 </div>
               </div>
 
