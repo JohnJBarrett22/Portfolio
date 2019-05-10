@@ -94,7 +94,7 @@ label {
     color: #f5941c;
     background-color: #4C4F57;
 }
-input:focus {
+input:focus, textarea:focus {
     border: 1px solid #f5941c;
     outline: #f5941c;
     box-shadow: 0 0 10px #f5941c;
