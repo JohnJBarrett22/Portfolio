@@ -32,6 +32,7 @@
     "socket.io": "^2.2.0"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^0.13.8"
+    "@angular-devkit/build-angular": "^0.13.8",
+    "nodemon": "^1.19.0"
   }
 }
