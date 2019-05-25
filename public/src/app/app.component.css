@@ -20,6 +20,9 @@ hr {
     margin: 1rem;
     background-color: white;
 }
+#about {
+    
+}
 #myWork {
     height: 100%;
     width: 100%;
@@ -52,7 +55,11 @@ hr {
     width: 60%;
     z-index: 10000;
 }
-.sample {
+.iconAlign {
+    margin: 1rem;
+    text-align: center;
+}
+.cardMargin {
     margin: 1rem;
 }
 .sticky {
@@ -71,6 +78,7 @@ hr {
 }
 .iconAbout {
     color: #f5941c;
+    
 }
 .cardPadding {
     padding: 0.25rem
