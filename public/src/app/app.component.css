@@ -69,6 +69,9 @@ hr {
 .test {
     border: 1px solid blue;
 }
+.iconAbout {
+    color: #f5941c;
+}
 .cardPadding {
     padding: 0.25rem
 }
