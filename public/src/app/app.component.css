@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    background-color:    
 }
 html {
 	scroll-behavior: smooth;
@@ -27,9 +26,9 @@ hr {
 #myWork {
     height: 100%;
     width: 100%;
-    padding: 3rem 0 5rem 0;
+    /* padding: 3rem 0 5rem 0; */
     background-color: #4C4F57;
-    clip-path: polygon(0 0%, 100% 9%, 100% 91%, 0% 100%)
+    /* clip-path: polygon(0 0%, 100% 9%, 100% 91%, 0% 100%) */
 }
 #skills {
     height: 500px;
@@ -38,7 +37,7 @@ hr {
 }
 #contact {
     background-color: black;
-    clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0% 100%)
+    /* clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0% 100%) */
 }
 #myVideo {
     display: inline-block;
@@ -131,4 +130,19 @@ input {
 }
 .bold {
     font-weight: bold;
+}
+.sectionTitle {
+    text-align: center;
+}
+.skillBox {
+    border: 2px solid black;
+    margin: 1rem;
+}
+.introBox {
+    margin: 1rem;
+    text-align: right;
+}
+.detailBox {
+    margin: 1rem;
+    text-align: left;
 }
