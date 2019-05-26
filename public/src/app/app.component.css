@@ -20,8 +20,12 @@ hr {
     margin: 1rem;
     background-color: white;
 }
+#home {
+    line-height: 0;
+}
 #about {
     padding: 1rem 0;
+    margin-top: 0;
 }
 #myWork {
     height: 100%;
