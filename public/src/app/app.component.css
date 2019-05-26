@@ -129,6 +129,7 @@ input {
 }
 .sectionTitle {
     text-align: center;
+    font-weight: bold;
 }
 .skillBox {
     /* border: 2px solid black; */
@@ -142,4 +143,13 @@ input {
 .detailBox {
     margin: 1rem;
     text-align: left;
+}
+.skillLogo {
+    margin: 3px
+}
+.colorOrange {
+    color: #f5941c;
+}
+.colorWhite {
+    color: white;
 }
