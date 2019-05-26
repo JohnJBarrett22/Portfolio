@@ -21,17 +21,18 @@ hr {
     background-color: white;
 }
 #about {
-    
+    padding: 1rem 0;
 }
 #myWork {
     height: 100%;
     width: 100%;
-    /* padding: 3rem 0 5rem 0; */
+    padding: 1rem 0;
     background-color: #4C4F57;
     /* clip-path: polygon(0 0%, 100% 9%, 100% 91%, 0% 100%) */
 }
 
 #contact {
+    padding-top: 2rem;
     background-color: black;
     /* clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0% 100%) */
 }
