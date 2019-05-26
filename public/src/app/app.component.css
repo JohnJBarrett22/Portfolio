@@ -137,6 +137,9 @@ input {
     text-align: center;
     margin: 1rem;
 }
+.segmentSpacer {
+     margin: 2rem 0;
+}
 .introBox {
     margin: 1rem;
     text-align: right;
@@ -146,7 +149,7 @@ input {
     text-align: left;
 }
 .skillLogo {
-    margin: 3px
+    margin: 3px;
 }
 .colorOrange {
     color: #f5941c;
