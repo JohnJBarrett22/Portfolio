@@ -16,16 +16,23 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     this.newUser = {firstName: "", lastName: "", email: "", organization: "", password: ""};
     
-    $('.boing').hover(
-      function(){ 
-        $(this).addClass('rubberBand')
+    $('.boing').mouseenter(
+      function (){ 
+        $(this).addClass('rubberBand').delay(1000)
       },
     )
-    $('.boing').mouseout(
-      function(){ 
-        $(this).removeClass('rubberBand')
-      },
-    )
+
+    // Language Icon Animation
+    const elements = document.querySelectorAll('.boing')
+    elements.forEach(element => {
+      element.addEventListener('mouseenter', function() {
+        element.classList.add('rubberBand')
+      });
+  
+      element.addEventListener('animationend', function() {
+        element.classList.remove('rubberBand')
+      });
+    })
   }
 
   @HostListener('window:scroll', ['$event'])
