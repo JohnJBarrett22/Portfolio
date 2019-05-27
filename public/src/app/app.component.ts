@@ -1,6 +1,5 @@
 import { Component, OnInit, HostListener } from '@angular/core';
 import { HttpService } from './http.service';
-import * as $ from 'jquery';
 
 @Component({
   selector: 'app-root',
@@ -16,21 +15,15 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     this.newUser = {firstName: "", lastName: "", email: "", organization: "", password: ""};
     
-    $('.boing').mouseenter(
-      function (){ 
-        $(this).addClass('rubberBand').delay(1000)
-      },
-    )
-
-    // Language Icon Animation
-    const elements = document.querySelectorAll('.boing')
-    elements.forEach(element => {
-      element.addEventListener('mouseenter', function() {
-        element.classList.add('rubberBand')
+    // Skills Icon Animation
+    const skillIcons = document.querySelectorAll('.boing')
+    skillIcons.forEach(skillIcon => {
+      skillIcon.addEventListener('mouseenter', function() {
+        skillIcon.classList.add('rubberBand')
       });
   
-      element.addEventListener('animationend', function() {
-        element.classList.remove('rubberBand')
+      skillIcon.addEventListener('animationend', function() {
+        skillIcon.classList.remove('rubberBand')
       });
     })
   }

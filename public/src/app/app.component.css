@@ -83,9 +83,6 @@ hr {
 .iconAbout {
     color: #f5941c;
 }
-.iconAbout:hover {
-    color: black;   /*NEED TO FIGURE OUT*/
-}
 .cardPadding {
     padding: 0.25rem
 }
