@@ -16,6 +16,15 @@ export class AppComponent implements OnInit {
     this.newUser = {firstName: "", lastName: "", email: "", organization: "", password: ""};
     
     // Skills Icon Animation
+    const sliderElements = document.querySelectorAll('.bounceInLeft')
+    sliderElements.forEach(sliderElement => {
+  
+      sliderElement.addEventListener('animationend', function() {
+        sliderElement.classList.remove('bounceInLeft')
+      });
+    })
+  
+    // Skills Icon Animation
     const skillIcons = document.querySelectorAll('.boing')
     skillIcons.forEach(skillIcon => {
       skillIcon.addEventListener('mouseenter', function() {

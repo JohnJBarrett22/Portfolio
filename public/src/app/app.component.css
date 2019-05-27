@@ -160,7 +160,9 @@ input {
 .colorWhite {
     color: white;
 }
-
+.colorChange:hover {
+    color: #f5941c;
+}
 
 
 
