@@ -1,5 +1,6 @@
 import { Component, OnInit, HostListener } from '@angular/core';
 import { HttpService } from './http.service';
+import * as $ from 'jquery';
 
 @Component({
   selector: 'app-root',
@@ -14,6 +15,17 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
     this.newUser = {firstName: "", lastName: "", email: "", organization: "", password: ""};
+    
+    $('.boing').hover(
+      function(){ 
+        $(this).addClass('rubberBand')
+      },
+    )
+    $('.boing').mouseout(
+      function(){ 
+        $(this).removeClass('rubberBand')
+      },
+    )
   }
 
   @HostListener('window:scroll', ['$event'])
@@ -52,3 +64,4 @@ export class AppComponent implements OnInit {
     })
   }
 }
+
