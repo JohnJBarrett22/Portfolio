@@ -9,6 +9,8 @@ import { HttpService } from './http.service';
 export class AppComponent implements OnInit {
   newUser: any;
   errors = [];
+  moo: any;
+
 
   constructor(private _httpService: HttpService) { }
 
@@ -35,22 +37,56 @@ export class AppComponent implements OnInit {
         skillIcon.classList.remove('rubberBand')
       });
     })
+
+    // document.addEventListener("DOMContentLoaded", function() { 
+    //   var navi = document.getElementById('myNav');
+    //   console.log(navi)
+    //   this.moo = navi.offsetTop;
+    //   console.log(this.moo)
+    // });
   }
+
 
   @HostListener('window:scroll', ['$event'])
   onWindowScroll(e) {
     let navBar = document.getElementById('myNav');
-    let topOfNavBar = navBar.offsetTop; 
-      if (window.pageYOffset > topOfNavBar) {
-        console.log("Offset:", window.pageYOffset)
-        console.log("ScrollY:", window.scrollY)
-        let element = document.getElementById('myNav');
-        element.classList.add('sticky');
+    let topOfNavBar = navBar.offsetTop;
+    console.log("topOfNavBar:", topOfNavBar)
+    console.log("ScrollY:", window.scrollY)
+    console.log("moo:", this.moo)
+      if (window.scrollY > topOfNavBar) {
+        navBar.classList.add('sticky');
       } else {
-        let element = document.getElementById('myNav');
-        element.classList.remove('sticky');
+        navBar.classList.remove('sticky');
       }
   }
+
+  // debounce(func, wait = 5, immediate = true) {
+  //   var timeout;
+  //   return function() {
+  //     var context = this, args = arguments;
+  //     var later = function() {
+  //       timeout = null;
+  //       if(!immediate) func.apply(context.args);
+  //     };
+  //     var callNow = immediate && !timeout;
+  //     clearTimeout(timeout);
+  //     timeout = setTimeout(later, wait);
+  //     if(callNow) func.apply(context, args);
+  //   };
+  // };
+
+  // checkSlide(event) {
+  //   var sliderElements = document.querySelectorAll(".cardSlide");
+  //     sliderElements.forEach(sliderElement => {
+  //       var slideInAt = (window.scrollY + window.innerHeight) - sliderElement.clientHeight / 2;
+  //       var isHalfShown = slideInAt > sliderElement.offsetTop;
+  //       if(isHalfShown) {
+  //         sliderElement.classList.add("active");	
+  //         console.log("active")
+  //       }
+  //     })
+  // }
 
   addUser(){
     console.log("~Component: addUser() initialzed~", this.newUser)
