@@ -38,6 +38,7 @@ export class AppComponent implements OnInit {
       });
     })
 
+    
     // document.addEventListener("DOMContentLoaded", function() { 
     //   var navi = document.getElementById('myNav');
     //   console.log(navi)
@@ -109,4 +110,3 @@ export class AppComponent implements OnInit {
     })
   }
 }
-
