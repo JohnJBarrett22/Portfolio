@@ -109,6 +109,14 @@ label {
     color: #f5941c;
     background-color: #4C4F57;
 }
+.submitButton:hover {
+    margin-top: 1rem;
+    border: none;
+    border-radius: .25rem;
+    padding: 0 .5rem;
+    color: black;
+    background-color: #f5941c;
+}
 input:focus, textarea:focus {
     border: 1px solid #f5941c;
     outline: #f5941c;
