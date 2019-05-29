@@ -38,16 +38,16 @@ export class AppComponent implements OnInit {
       });
     })
 
-    
-    // document.addEventListener("DOMContentLoaded", function() { 
-    //   var navi = document.getElementById('myNav');
-    //   console.log(navi)
-    //   this.moo = navi.offsetTop;
-    //   console.log(this.moo)
-    // });
+    // ~~NAV TEST~~
+    document.addEventListener("DOMContentLoaded", function() { 
+      var navi = document.getElementById('myNav');
+      console.log(navi)
+      this.moo = navi.offsetTop;
+      console.log("Moo:", this.moo)
+    });
   }
 
-
+  // Sticky NavBar
   @HostListener('window:scroll', ['$event'])
   onWindowScroll(e) {
     let navBar = document.getElementById('myNav');
