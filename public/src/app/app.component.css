@@ -84,7 +84,7 @@ hr {
     color: #f5941c;
 }
 .cardPadding {
-    padding: 0.25rem
+    padding: 1rem;
 }
 .cardIconBrowser {
     color: blue;
@@ -171,10 +171,36 @@ input {
 .colorChange:hover {
     color: #f5941c;
 }
-
-
-
-
+.titleSpacing { 
+    margin: 0 0 .75rem 0;
+}
+.flipContainer {
+    perspective: 1000px
+}
+.flipContainer:hover .flipCard, .flipContainer.hover .flipCard{
+    transform: rotateY(180deg)
+}
+.flipCard { 
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+}
+.flipCard:hover {
+    
+}
+.cardFront {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+.cardBack {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transform: rotateY(180deg)
+}
 
 
 
