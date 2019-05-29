@@ -187,6 +187,8 @@ input {
 }
 .cardFront {
     position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
@@ -199,7 +201,13 @@ input {
     backface-visibility: hidden;
     transform: rotateY(180deg);
 }
-
+.moo {
+    height: 100%;
+    background-color: white;
+}
+h1 {
+    font-family: 'Audiowide', cursive;
+}
 
 
 
