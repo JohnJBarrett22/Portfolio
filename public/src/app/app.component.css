@@ -204,8 +204,9 @@ input {
 h1 {
     font-family: 'Audiowide', cursive;
 }
-
-
+.myRow {
+    height: 23rem;
+}
 
 
 
