@@ -207,8 +207,19 @@ h1 {
 .myRow {
     height: 23rem;
 }
-
-
+.invisible {
+    opacity: 0;
+}
+.visible {
+    opacity: 1;
+}
+.myMap {
+    width: 100%;
+    height: 100%;
+}
+.contactSpace {
+    margin: 1rem;
+}
 
 
 

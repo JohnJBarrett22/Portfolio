@@ -1,4 +1,4 @@
-import { Component, OnInit, HostListener } from '@angular/core';
+import { Component, OnInit, AfterViewInit, HostListener } from '@angular/core';
 import { HttpService } from './http.service';
 
 @Component({
@@ -9,7 +9,7 @@ import { HttpService } from './http.service';
 export class AppComponent implements OnInit {
   newUser: any;
   errors = [];
-  moo: any;
+  navPosition: any;
   myStyle: object = {};
   myParams: object = {};
   width: number = 100;
@@ -49,7 +49,6 @@ export class AppComponent implements OnInit {
     //   console.log("Moo:", this.moo)
     // });
 
-
     this.myStyle = {
       'position': 'relative',
       'width': '100%',
@@ -74,7 +73,11 @@ export class AppComponent implements OnInit {
         },
       }
     };
+  }
 
+  ngAfterViewInit(){
+    var navi = document.getElementById('myNav');
+    this.navPosition = navi.offsetTop;
   }
 
   // Sticky NavBar
@@ -85,7 +88,8 @@ export class AppComponent implements OnInit {
     let topOfNavBar = navBar.offsetTop;
     // console.log("topOfNavBar:", topOfNavBar)
     // console.log("ScrollY:", window.scrollY)
-    // console.log("moo:", this.moo)
+    // console.log("navPosition:", this.navPosition)
+    // console.log("BAR MEASUREMENTS:", navBar.offsetHeight)
       if (window.scrollY > topOfNavBar) {
         navBar.classList.add('sticky');
       } else {
@@ -109,15 +113,18 @@ export class AppComponent implements OnInit {
   };
 
   checkSlide(event) {
-    
     var sliderElements = document.querySelectorAll(".cardSlide");
       sliderElements.forEach(sliderElement => {
-        var slideInAt = (window.scrollY + window.innerHeight) - sliderElement.clientHeight / 2;
+        var slideInAt = (window.scrollY + window.innerHeight * 0.9) - sliderElement.clientHeight;  //DIVIDE BY 2
         var isHalfShown = slideInAt > sliderElement['offsetTop'];
+        console.log(window.innerHeight)
+        console.log(sliderElement.clientHeight)
+        console.log("ScrollY:", window.scrollY)
         console.log("Sliderinat", slideInAt)
         console.log("Offsettop", sliderElement['offsetTop'])
         if(isHalfShown) {
-          sliderElement.classList.add("bounceInLeft");	
+          sliderElement.classList.remove("invisible");
+          sliderElement.classList.add("bounceInLeft", "visible");	
         }
       })
   }

@@ -81,26 +81,26 @@
     <!-- About -->
     <section id="about">
       <div id="about">
-        <h1 class="sectionTitle center animated cardSlide">About</h1>
+        <h1 class="sectionTitle center animated">About</h1>
         <div class="row justify-content-md-center segmentSpacer">
           <div class="col col-lg-1"></div>
-          <div class="col col-lg-2 iconAlign">
-            <i class="fab fas fa-mobile-alt fa-5x iconAbout animated cardSlide"></i>
+          <div class="col col-lg-2 iconAlign animated invisble cardSlide">
+            <i class="fab fas fa-mobile-alt fa-5x iconAbout animated"></i>
             <h3 class="bold">Responsive</h3>
             <p>Random text Random text Random text Random text Random text</p>
           </div>
           <div class="col col-lg-2 iconAlign">
-            <i class="fas fa-rocket fa-5x iconAbout animated cardSlide"></i>
+            <i class="fas fa-rocket fa-5x iconAbout animated"></i>
             <h3 class="bold">Dynamic</h3>
             <p>Random text Random text Random text Random text Random text</p>
           </div>
-          <div class="col col-lg-2 iconAlign cardSlide">
-            <i class="fas fa-lock fa-5x iconAbout animated cardSlide"></i>
+          <div class="col col-lg-2 iconAlign">
+            <i class="fas fa-lock fa-5x iconAbout animated"></i>
             <h3 class="bold">Secure</h3>
             <p>Random text Random text Random text Random text Random text</p>
           </div>
-          <div class="col col-lg-2 iconAlign cardSlide">
-            <i class="fas fa-tachometer-alt fa-5x iconAbout animated cardSlide"></i>
+          <div class="col col-lg-2 iconAlign">
+            <i class="fas fa-tachometer-alt fa-5x iconAbout animated"></i>
             <h3 class="bold">Quick</h3>
             <p>Random text Random text Random text Random text Random text</p>
           </div>
@@ -479,8 +479,7 @@
       <h1 class="sectionTitle colorWhite">Contact Me</h1>
       <div id="contact"> 
         <div class="row justify-content-md-center">
-          <div class="col col-lg-1"></div>
-          <div class="col col-lg-10">
+          <div class="col col-lg-5 contactSpace">
               
             <form (submit)="addUser()">
               <!-- Row #1 -->
@@ -536,7 +535,9 @@
             <p class="error" *ngFor="let e of errors">{{e}}</p>
 
           </div>
-          <div class="col col-lg-1"></div>
+          <div class="col col-lg-5 contactSpace">
+            <iframe class="myMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52803.48115153905!2d-118.4210324406546!3d34.191916975297765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c295d3ec0031d1%3A0x2d38b371dee1f0b4!2sNorth+Hollywood%2C+Los+Angeles%2C+CA!5e0!3m2!1sen!2sus!4v1559202394641!5m2!1sen!2sus" allowfullscreen></iframe>
+          </div>
         </div>
         <div class="row justify-content-md-center">
           <div class="col col-lg-1"></div>
