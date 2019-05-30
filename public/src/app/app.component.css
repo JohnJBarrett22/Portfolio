@@ -205,7 +205,7 @@ h1 {
     font-family: 'Audiowide', cursive;
 }
 .myRow {
-    height: 23rem;
+    height: 25rem;
 }
 .invisible {
     opacity: 0;
@@ -219,6 +219,9 @@ h1 {
 }
 .contactSpace {
     margin: 1rem;
+}
+.size {
+    height: 12.5rem;
 }
 
 
