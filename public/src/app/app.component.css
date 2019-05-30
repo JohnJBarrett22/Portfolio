@@ -28,9 +28,9 @@ hr {
     margin-top: 0;
 }
 #myWork {
-    height: 100vh;
+    height: 100%;
     width: 100%;
-    padding: 1rem 0;
+    padding: 2rem 0;
     background-color: #4C4F57;
     /* clip-path: polygon(0 0%, 100% 9%, 100% 91%, 0% 100%) */
 }

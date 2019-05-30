@@ -42,20 +42,19 @@ export class AppComponent implements OnInit {
       });
     })
 
-    // ~~NAV TEST~~
-    document.addEventListener("DOMContentLoaded", function() { 
-      var navi = document.getElementById('myNav');
-      console.log(navi)
-      this.moo = navi.offsetTop;
-      console.log("Moo:", this.moo)
-    });
+    // document.addEventListener("DOMContentLoaded", function() { 
+    //   var navi = document.getElementById('myNav');
+    //   console.log(navi)
+    //   this.moo = navi.offsetTop;
+    //   console.log("Moo:", this.moo)
+    // });
 
 
     this.myStyle = {
-      'position': 'fixed',
+      'position': 'relative',
       'width': '100%',
       'height': '100%',
-      'z-index': -1,
+      'z-index': 2,
       'top': 0,
       'left': 0,
       'right': 0,
@@ -81,11 +80,12 @@ export class AppComponent implements OnInit {
   // Sticky NavBar
   @HostListener('window:scroll', ['$event'])
   onWindowScroll(e) {
+    this.checkSlide(this.debounce)
     let navBar = document.getElementById('myNav');
     let topOfNavBar = navBar.offsetTop;
-    console.log("topOfNavBar:", topOfNavBar)
-    console.log("ScrollY:", window.scrollY)
-    console.log("moo:", this.moo)
+    // console.log("topOfNavBar:", topOfNavBar)
+    // console.log("ScrollY:", window.scrollY)
+    // console.log("moo:", this.moo)
       if (window.scrollY > topOfNavBar) {
         navBar.classList.add('sticky');
       } else {
@@ -93,32 +93,34 @@ export class AppComponent implements OnInit {
       }
   }
 
-  // debounce(func, wait = 5, immediate = true) {
-  //   var timeout;
-  //   return function() {
-  //     var context = this, args = arguments;
-  //     var later = function() {
-  //       timeout = null;
-  //       if(!immediate) func.apply(context.args);
-  //     };
-  //     var callNow = immediate && !timeout;
-  //     clearTimeout(timeout);
-  //     timeout = setTimeout(later, wait);
-  //     if(callNow) func.apply(context, args);
-  //   };
-  // };
+  debounce(func, wait = 5, immediate = true) {
+    var timeout;
+    return function() {
+      var context = this, args = arguments;
+      var later = function() {
+        timeout = null;
+        if(!immediate) func.apply(context.args);
+      };
+      var callNow = immediate && !timeout;
+      clearTimeout(timeout);
+      timeout = setTimeout(later, wait);
+      if(callNow) func.apply(context, args);
+    };
+  };
 
-  // checkSlide(event) {
-  //   var sliderElements = document.querySelectorAll(".cardSlide");
-  //     sliderElements.forEach(sliderElement => {
-  //       var slideInAt = (window.scrollY + window.innerHeight) - sliderElement.clientHeight / 2;
-  //       var isHalfShown = slideInAt > sliderElement.offsetTop;
-  //       if(isHalfShown) {
-  //         sliderElement.classList.add("active");	
-  //         console.log("active")
-  //       }
-  //     })
-  // }
+  checkSlide(event) {
+    
+    var sliderElements = document.querySelectorAll(".cardSlide");
+      sliderElements.forEach(sliderElement => {
+        var slideInAt = (window.scrollY + window.innerHeight) - sliderElement.clientHeight / 2;
+        var isHalfShown = slideInAt > sliderElement['offsetTop'];
+        console.log("Sliderinat", slideInAt)
+        console.log("Offsettop", sliderElement['offsetTop'])
+        if(isHalfShown) {
+          sliderElement.classList.add("bounceInLeft");	
+        }
+      })
+  }
 
   addUser(){
     console.log("~Component: addUser() initialzed~", this.newUser)
