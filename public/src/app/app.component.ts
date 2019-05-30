@@ -1,5 +1,6 @@
 import { Component, OnInit, AfterViewInit, HostListener } from '@angular/core';
 import { HttpService } from './http.service';
+import { WOW } from 'wowjs/dist/wow.min';
 
 @Component({
   selector: 'app-root',
@@ -78,12 +79,17 @@ export class AppComponent implements OnInit {
   ngAfterViewInit(){
     var navi = document.getElementById('myNav');
     this.navPosition = navi.offsetTop;
+    var wow = new WOW({
+      live: false
+    });
+    wow.init()
+    
   }
 
   // Sticky NavBar
   @HostListener('window:scroll', ['$event'])
   onWindowScroll(e) {
-    this.checkSlide(this.debounce)
+    // this.checkSlide(this.debounce)
     let navBar = document.getElementById('myNav');
     let topOfNavBar = navBar.offsetTop;
     // console.log("topOfNavBar:", topOfNavBar)
@@ -97,37 +103,37 @@ export class AppComponent implements OnInit {
       }
   }
 
-  debounce(func, wait = 5, immediate = true) {
-    var timeout;
-    return function() {
-      var context = this, args = arguments;
-      var later = function() {
-        timeout = null;
-        if(!immediate) func.apply(context.args);
-      };
-      var callNow = immediate && !timeout;
-      clearTimeout(timeout);
-      timeout = setTimeout(later, wait);
-      if(callNow) func.apply(context, args);
-    };
-  };
+  // debounce(func, wait = 5, immediate = true) {
+  //   var timeout;
+  //   return function() {
+  //     var context = this, args = arguments;
+  //     var later = function() {
+  //       timeout = null;
+  //       if(!immediate) func.apply(context.args);
+  //     };
+  //     var callNow = immediate && !timeout;
+  //     clearTimeout(timeout);
+  //     timeout = setTimeout(later, wait);
+  //     if(callNow) func.apply(context, args);
+  //   };
+  // };
 
-  checkSlide(event) {
-    var sliderElements = document.querySelectorAll(".cardSlide");
-      sliderElements.forEach(sliderElement => {
-        var slideInAt = (window.scrollY + window.innerHeight * 0.9) - sliderElement.clientHeight;  //DIVIDE BY 2
-        var isHalfShown = slideInAt > sliderElement['offsetTop'];
-        console.log(window.innerHeight)
-        console.log(sliderElement.clientHeight)
-        console.log("ScrollY:", window.scrollY)
-        console.log("Sliderinat", slideInAt)
-        console.log("Offsettop", sliderElement['offsetTop'])
-        if(isHalfShown) {
-          sliderElement.classList.remove("invisible");
-          sliderElement.classList.add("bounceInLeft", "visible");	
-        }
-      })
-  }
+  // checkSlide(event) {
+  //   var sliderElements = document.querySelectorAll(".cardSlide");
+  //     sliderElements.forEach(sliderElement => {
+  //       var slideInAt = (window.scrollY + window.innerHeight * 0.9) - sliderElement.clientHeight;  //DIVIDE BY 2
+  //       var isHalfShown = slideInAt > sliderElement['offsetTop'];
+  //       console.log(window.innerHeight)
+  //       console.log(sliderElement.clientHeight)
+  //       console.log("ScrollY:", window.scrollY)
+  //       console.log("Sliderinat", slideInAt)
+  //       console.log("Offsettop", sliderElement['offsetTop'])
+  //       if(isHalfShown) {
+  //         sliderElement.classList.remove("invisible");
+  //         sliderElement.classList.add("bounceInLeft", "visible");	
+  //       }
+  //     })
+  // }
 
   addUser(){
     console.log("~Component: addUser() initialzed~", this.newUser)

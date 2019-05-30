@@ -81,7 +81,7 @@
     <!-- About -->
     <section id="about">
       <div id="about">
-        <h1 class="sectionTitle center animated">About</h1>
+        <h1 class="sectionTitle center wow bounceInLeft">About</h1>
 
         <div class="row justify-content-md-center segmentSpacer">
           <div class="col col-lg-5 introBox">
@@ -166,11 +166,11 @@
       <div id="myWork">
           <!-- <particles [style]="style" [width]="width" [height]="height" [params]="myparams"></particles> -->
 
-        <h1 class="sectionTitle colorOrange animated bounce">My Work</h1>
+        <h1 class="sectionTitle colorOrange wow bounceInLeft">My Work</h1>
 
         <div class="row justify-content-md-center">
           <div class="col col-lg-1"></div>
-          <div class="col col-lg-2 iconAlign animated invisble cardSlide">
+          <div class="col col-lg-2 iconAlign animated invisible cardSlide">
             <i class="fab fas fa-mobile-alt fa-5x iconAbout animated"></i>
             <h3 class="bold colorWhite">Responsive</h3>
             <p class="colorWhite">Random text Random text Random text Random text Random text</p>
@@ -215,8 +215,9 @@
               </mdb-card>
 
               <mdb-card class="cardBack">
-                  <div class="view rgba-white-slight waves-light size" mdbWavesEffect>
-                    <mdb-card-img src="https://mdbootstrap.com/img/Mockups/Lightbox/Thumbnail/img%20(67).jpg" alt="Card image cap"></mdb-card-img>
+                  <div class="view rgba-white-slight waves-light size color" mdbWavesEffect>
+          <particles [style]="style" [width]="width" [height]="height" [params]="myparams"></particles>
+                    
                   </div>
                 <mdb-card-body class="cardPadding size">
                   <mdb-card-title>
@@ -356,7 +357,7 @@
 
               <mdb-card class="cardBack">
                   <div class="view rgba-white-slight waves-light size" mdbWavesEffect>
-                    <mdb-card-img src="https://media.giphy.com/media/om2QDbaG7eekM/giphy.gif" alt="Card image cap"></mdb-card-img>
+                    <!-- <mdb-card-img src="https://media.giphy.com/media/om2QDbaG7eekM/giphy.gif" alt="Card image cap"></mdb-card-img> -->
                   </div>
                 <mdb-card-body class="cardPadding size">
                   <mdb-card-title>
@@ -477,7 +478,7 @@
 
     <!-- Contact -->
     <section id="contact">
-      <h1 class="sectionTitle colorWhite">Contact Me</h1>
+      <h1 class="sectionTitle colorWhite wow bounceInLeft">Contact Me</h1>
       <div id="contact"> 
         <div class="row justify-content-md-center">
           <div class="col col-lg-5 contactSpace">
@@ -537,7 +538,7 @@
 
           </div>
           <div class="col col-lg-5 contactSpace">
-            <iframe class="myMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52803.48115153905!2d-118.4210324406546!3d34.191916975297765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c295d3ec0031d1%3A0x2d38b371dee1f0b4!2sNorth+Hollywood%2C+Los+Angeles%2C+CA!5e0!3m2!1sen!2sus!4v1559202394641!5m2!1sen!2sus" allowfullscreen></iframe>
+            <!-- <iframe class="myMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52803.48115153905!2d-118.4210324406546!3d34.191916975297765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c295d3ec0031d1%3A0x2d38b371dee1f0b4!2sNorth+Hollywood%2C+Los+Angeles%2C+CA!5e0!3m2!1sen!2sus!4v1559202394641!5m2!1sen!2sus" allowfullscreen></iframe> -->
           </div>
         </div>
         <div class="row justify-content-md-center">
@@ -565,7 +566,7 @@
       </div>
     </section>
   </div>
- 
+
   <router-outlet></router-outlet>
 
 </body>

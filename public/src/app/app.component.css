@@ -223,7 +223,12 @@ h1 {
 .size {
     height: 12.5rem;
 }
-
+.color {
+    background-color: black;
+}
+.wow {
+    visibility: hidden;
+}
 
 
 /* Typewriter */
