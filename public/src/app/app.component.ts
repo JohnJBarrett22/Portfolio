@@ -84,7 +84,7 @@ export class AppComponent implements OnInit {
       {
         boxClass:     'wow',      // animated element css class (default is wow)
         animateClass: 'animated', // animation css class (default is animated)
-        offset:       300,          // distance to the element when triggering the animation (default is 0)
+        offset:       200,          // distance to the element when triggering the animation (default is 0)
         mobile:       true,       // trigger animations on mobile devices (default is true)
         live:         false,       // act on asynchronously loaded content (default is true)
         callback:     function(box) {
@@ -96,10 +96,9 @@ export class AppComponent implements OnInit {
     );
     wow.init();
 
-    document.addEventListener("DOMContentLoaded", function() { 
-      wow.sync()
-      console.log("Sync");
-    });
+    // document.addEventListener("DOMContentLoaded", function() { 
+    //   wow.sync()
+    // });
     
   }
 
@@ -119,38 +118,6 @@ export class AppComponent implements OnInit {
         navBar.classList.remove('sticky');
       }
   }
-
-  // debounce(func, wait = 5, immediate = true) {
-  //   var timeout;
-  //   return function() {
-  //     var context = this, args = arguments;
-  //     var later = function() {
-  //       timeout = null;
-  //       if(!immediate) func.apply(context.args);
-  //     };
-  //     var callNow = immediate && !timeout;
-  //     clearTimeout(timeout);
-  //     timeout = setTimeout(later, wait);
-  //     if(callNow) func.apply(context, args);
-  //   };
-  // };
-
-  // checkSlide(event) {
-  //   var sliderElements = document.querySelectorAll(".cardSlide");
-  //     sliderElements.forEach(sliderElement => {
-  //       var slideInAt = (window.scrollY + window.innerHeight * 0.9) - sliderElement.clientHeight;  //DIVIDE BY 2
-  //       var isHalfShown = slideInAt > sliderElement['offsetTop'];
-  //       console.log(window.innerHeight)
-  //       console.log(sliderElement.clientHeight)
-  //       console.log("ScrollY:", window.scrollY)
-  //       console.log("Sliderinat", slideInAt)
-  //       console.log("Offsettop", sliderElement['offsetTop'])
-  //       if(isHalfShown) {
-  //         sliderElement.classList.remove("invisible");
-  //         sliderElement.classList.add("bounceInLeft", "visible");	
-  //       }
-  //     })
-  // }
 
   addUser(){
     console.log("~Component: addUser() initialzed~", this.newUser)
