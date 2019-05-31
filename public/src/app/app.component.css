@@ -21,7 +21,9 @@ hr {
     background-color: white;
 }
 #home {
+    height: 100vh;
     line-height: 0;
+    background-color: black;
 }
 #about {
     padding: 1rem 0;
@@ -56,7 +58,7 @@ hr {
     left: 0;
     right: 0;
     margin: 0 auto;
-    width: 60%;
+    width: 55%;
     z-index: 10000;
 }
 .iconAlign {

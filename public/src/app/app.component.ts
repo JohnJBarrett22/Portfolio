@@ -35,7 +35,7 @@ export class AppComponent implements OnInit {
     const skillIcons = document.querySelectorAll('.boing')
     skillIcons.forEach(skillIcon => {
       skillIcon.addEventListener('mouseenter', function() {
-        skillIcon.classList.add('rubberBand')
+        skillIcon.classList.add('activated', 'rubberBand')
       });
   
       skillIcon.addEventListener('animationend', function() {
@@ -51,9 +51,9 @@ export class AppComponent implements OnInit {
     // });
 
     this.myStyle = {
-      'position': 'relative',
-      'width': '100%',
-      'height': '100%',
+      'position': 'absolute',
+      'width': '100vw',
+      'height': '100vh',
       'z-index': 2,
       'top': 0,
       'left': 0,
@@ -67,11 +67,8 @@ export class AppComponent implements OnInit {
           value: 100,
         },
         color: {
-          value: '#ff0000'
-        },
-        shape: {
-          type: 'triangle',
-        },
+          value: '#f5941c'
+        }
       }
     };
   }
