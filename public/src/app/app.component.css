@@ -225,7 +225,13 @@ h1 {
 .wow {
     visibility: hidden;
 }
-
+.cardIconContainer {
+    text-align: center;
+}
+.cardLogo {
+    height: 1.5rem;
+    margin: .5rem;
+}
 
 /* Typewriter */
 .typewriter {
