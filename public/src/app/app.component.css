@@ -218,6 +218,7 @@ h1 {
 }
 .cardFillTop {
     height: 12.5rem;
+    text-align: center;
 }
 .cardFillBottom {
     height: 12.5rem;
