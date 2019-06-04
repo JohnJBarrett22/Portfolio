@@ -233,6 +233,10 @@ h1 {
     height: 1.5rem;
     margin: .25rem; 
 }
+.crudLogo {
+    height: 1.25rem;
+    margin: .25rem;
+}
 
 /* Typewriter */
 .typewriter {
