@@ -58,16 +58,16 @@
       <links>
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link navbarLink" href="#home">Home</a>
+            <a class="nav-link navbarLink" mdbPageScroll href="#home">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link navbarLink" href="#about">About</a>
+            <a class="nav-link navbarLink" mdbPageScroll href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link navbarLink" href="#myWork">My Work</a>
+            <a class="nav-link navbarLink" mdbPageScroll href="#myWork">My Work</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link navbarLink" href="#contact">Contact</a>
+            <a class="nav-link navbarLink" mdbPageScroll href="#contact">Contact</a>
           </li>
           <li class="nav-item">
             <a class="nav-link navbarLink" href="../assets/Resume - John Barrett.pdf" download mdbWavesEffect>Resume</a>
@@ -172,7 +172,13 @@
     </section>
 
 
+    <!-- <div class="video-parallax topParallaxContainer test">
+      <video class="topParallax" src="https://mdbootstrap.com/img/video/flowers.mp4" frameborder="0" autoplay="" loop=""></video>
+    </div> -->
 
+
+
+    
     <!-- My Work -->
     <section id="myWork">
       <div id="myWork">
@@ -208,6 +214,8 @@
 
           <div class="col col-lg-1"></div>
 
+          
+
           <!-- Michael's Mini-Mart -->
           <div class="col col-lg-2 cardMargin flipContainer animated wow bounceInLeft">
             <div class="flipCard">
@@ -240,12 +248,39 @@
                   <p>Materialize</p>
                   <p>Formspree</p>
                 </div>
+                <button type="button" mdbBtn color="primary" class="waves-light" data-toggle="modal" data-target="#basicExample" (click)="frame.show()"
+                mdbWavesEffect>Launch Modal</button>
                 <mdb-card-body class="cardPadding cardFillBottom">
                   <mdb-card-text> Some quick example text to build on the card title and make up the bulk of the card's content.</mdb-card-text>
                   <a href="https://github.com/JohnJBarrett22/Michaels_Mini_Mart" class="cardIconYouTube" mdbWavesEffect><mdb-icon fab icon="youtube" size="lg"></mdb-icon></a>
                   <a href="" class="cardIconGitHub" mdbWavesEffect><mdb-icon fab icon="github" size="lg"></mdb-icon></a>
                 </mdb-card-body>
               </mdb-card>
+            </div>
+
+          </div>
+
+          <!-- Modal -->
+          <div mdbModal #frame="mdbModal" class="modal fade" id="frameModalTop" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog-centered modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-body mb-0 p-0">
+                  <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/A3PDXmYoF5U" allowfullscreen></iframe>
+                  </div>
+                </div>
+          
+                <div class="modal-footer justify-content-center flex-column flex-md-row">
+                  <span class="mr-4">Spread the word!</span>
+                  <div>
+                    <a type="button" mdbBtn floating="true" size="sm" class="btn-fb waves-light" mdbWavesEffect><i class="fab fa-facebook-f"></i></a>
+                    <a type="button" mdbBtn floating="true" size="sm" class="btn-tw waves-light" mdbWavesEffect><i class="fab fa-twitter"></i></a>
+                    <a type="button" mdbBtn floating="true" size="sm" class="btn-gplus waves-light" mdbWavesEffect><i class="fab fa-google-plus"></i></a>
+                    <a type="button" mdbBtn floating="true" size="sm" class="btn-ins waves-light" mdbWavesEffect><i class="fab fa-linkedin-in"></i></a>
+                  </div>
+                  <button type="button" mdbBtn color="primary" outline="true" rounded="true" class="ml-4 waves-light" mdbWavesEffect data-dismiss="modal" (click)="frame.hide()">Close</button>
+                </div>
+              </div>
             </div>
           </div>
 

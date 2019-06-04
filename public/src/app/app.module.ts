@@ -10,6 +10,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { ParticlesModule } from 'angular-particle';
 
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { MDBBootstrapModulesPro } from 'ng-uikit-pro-standard';
+import { MDBSpinningPreloader } from 'ng-uikit-pro-standard';
 
 @NgModule({
   declarations: [
@@ -19,13 +21,11 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
     BrowserModule,
     AppRoutingModule,
     ButtonsModule,
-    WavesModule,
-    CardsFreeModule,
     HttpClientModule,
     ParticlesModule,
-    MDBBootstrapModule.forRoot()
+    MDBBootstrapModulesPro.forRoot()
   ],
-  providers: [HttpService],
+  providers: [HttpService, MDBSpinningPreloader],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

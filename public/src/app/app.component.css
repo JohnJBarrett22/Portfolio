@@ -249,6 +249,30 @@ h1 {
     height: 1.75rem;
     margin: .25rem;
 }
+.topParallaxContainer {
+    border: 0;
+}
+.topParallax {
+    width: 100%;
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Typewriter */
 .typewriter {
