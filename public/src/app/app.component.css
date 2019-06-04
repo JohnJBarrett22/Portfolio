@@ -256,7 +256,9 @@ h1 {
     width: 100%;
     margin: 0;
 }
-
+.myModal {
+    margin: 0 auto;
+}
 
 
 

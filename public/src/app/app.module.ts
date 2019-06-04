@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { ButtonsModule, WavesModule, CardsFreeModule } from 'angular-bootstrap-md'
+// import { ButtonsModule, CollapseModule, CardsFreeModule } from 'angular-bootstrap-md'
+import { AccordionModule, WavesModule } from 'ng-uikit-pro-standard'
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -9,7 +10,7 @@ import { HttpService } from './http.service';
 import { HttpClientModule } from '@angular/common/http';
 import { ParticlesModule } from 'angular-particle';
 
-import { MDBBootstrapModule } from 'angular-bootstrap-md';
+// import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { MDBBootstrapModulesPro } from 'ng-uikit-pro-standard';
 import { MDBSpinningPreloader } from 'ng-uikit-pro-standard';
 
@@ -20,9 +21,9 @@ import { MDBSpinningPreloader } from 'ng-uikit-pro-standard';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ButtonsModule,
     HttpClientModule,
     ParticlesModule,
+    AccordionModule,
     MDBBootstrapModulesPro.forRoot()
   ],
   providers: [HttpService, MDBSpinningPreloader],
