@@ -6,10 +6,16 @@ html {
 	scroll-behavior: smooth;
 }
 a {
-    color: #faae17;
+    color: black;
 }
 .navbarLink {
     font-weight: bold;
+}
+.navbarLink:hover {
+    color: #f5941c;
+}
+.footerIcon {
+    color: #f5941c;
 }
 .footerIcon:hover {
     color: white;
@@ -237,6 +243,10 @@ h1 {
 }
 .crudLogo {
     height: 1.25rem;
+    margin: .25rem;
+}
+.apiLogo {
+    height: 1.75rem;
     margin: .25rem;
 }
 
