@@ -8,4 +8,8 @@ export class HttpService {
 
   constructor(private _http: HttpClient) { }
 
+  postUser(userObj){
+    console.log("~Service: postUser() initialized~", userObj);
+    return this._http.post("/api/users", userObj);
+  }
 }
