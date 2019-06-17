@@ -1,5 +1,5 @@
 * {
-    margin: 0;
+    /* margin: 0; */
     padding: 0;
 }
 html {
@@ -22,7 +22,7 @@ a {
 }
 i {
     color: white;
-    margin: 1rem;
+    /* margin: 1rem; */
 }
 hr {
     margin: 1rem;
@@ -256,10 +256,12 @@ h1 {
     width: 100%;
     margin: 0;
 }
-.myModal {
+/* .myModal {
+    margin: 0 auto;
+} */
+.cardButton {
     margin: 0 auto;
 }
-
 
 
 
