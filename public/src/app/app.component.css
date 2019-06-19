@@ -115,7 +115,7 @@ label {
     margin-top: 1rem;
     border: none;
     border-radius: .25rem;
-    padding: 0 .5rem;
+    padding: .75rem;
     color: #f5941c;
     background-color: #4C4F57;
 }
@@ -123,7 +123,7 @@ label {
     margin-top: 1rem;
     border: none;
     border-radius: .25rem;
-    padding: 0 .5rem;
+    padding: .75rem;
     color: black;
     background-color: #f5941c;
 }
@@ -256,13 +256,15 @@ h1 {
     width: 100%;
     margin: 0;
 }
-/* .myModal {
-    margin: 0 auto;
-} */
 .cardButton {
     margin: 0 auto;
 }
-
+.buttonIcon {
+    margin-left: .5rem;
+}
+form {
+    padding: 1rem;
+}
 
 
 
