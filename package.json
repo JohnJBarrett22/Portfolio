@@ -27,7 +27,7 @@
     "express-handlebars": "^3.0.2",
     "font-awesome": "^4.7.0",
     "hammerjs": "^2.0.8",
-    "mongoose": "^5.4.1",
+    "mongoose": "^5.7.5",
     "nodemailer": "^6.1.1",
     "socket.io": "^2.2.0"
   },
